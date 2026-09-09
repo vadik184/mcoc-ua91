@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="championForm" enctype="multipart/form-data">
+  <h2>Додавання Чемпіона</h2>
+
+  <label>Ім’я чемпіона:
+    <input type="text" id="championName" required>
+  </label>
+
+  <label>Клас:
+    <select id="class" required>
+      <option>Cosmic</option>
+      <option>Mutant</option>
+      <option>Skill</option>
+      <option>Science</option>
+      <option>Mystic</option>
+      <option>Tech</option>
+    </select>
+  </label>
+
+    <label>Фото чемпіона:
+    <input type="file" id="photo" accept="image/*" required>
+  </label>
+<fieldset>
+  <legend>Імунітети</legend>
+  <div class="immunity-icons">
+    <label>
+      <input type="checkbox" value="Bleed" class="immunity-checkbox">
+      <img src="icons/bleed.png" alt="Bleed">
+    </label>
+    <label>
+      <input type="checkbox" value="Poison" class="immunity-checkbox">
+      <img src="icons/poison.png" alt="Poison">
+    </label>
+    <label>
+      <input type="checkbox" value="Shock" class="immunity-checkbox">
+      <img src="icons/shock.png" alt="Shock">
+    </label>
+    <label>
+      <input type="checkbox" value="Incinerate" class="immunity-checkbox">
+      <img src="icons/incinerate.png" alt="Incinerate">
+    </label>
+  </div>
+</fieldset>
+
+<div id="immunity-details"></div>
+<script src="immunity.js"></script>
+  </body>
+  
+</html>

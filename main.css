@@ -1,0 +1,28 @@
+.immunity-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.immunity-icons input[type="checkbox"] {
+  display: none;
+}
+
+.immunity-icons img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.immunity-icons input[type="checkbox"]:checked + img {
+  border-color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.2);
+}
+
+.immunity-block {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
